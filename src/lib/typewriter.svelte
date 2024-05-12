@@ -25,7 +25,7 @@
 		'Coffee Addict',
 		'Smelly Nerd',
 		'Wordpress Expert',
-		'Little Tired',
+		'A Little Tired',
 		'Lovable Geek',
 		'Drupal Know It All',
 		'Level 15 Barbarian',
@@ -74,4 +74,4 @@
 	});
 </script>
 
-<pre class="inline font-sans whitespace-pre-wrap">A {$tween}</pre>
+<pre class="inline font-sans whitespace-pre-wrap">{$tween}</pre>
