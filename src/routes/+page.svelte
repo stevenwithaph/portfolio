@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Link from '$lib/link.svelte';
 	import Typewriter from '$lib/typewriter.svelte';
+	import { toHtmlEntities } from '$lib/utils';
 	import '../app.css';
 </script>
 
@@ -8,10 +9,7 @@
 	<nav class="fixed top-4 right-4">
 		<ul class="flex justify-end gap-x-2">
 			<li>
-				<Link
-					link={'mailto:&#115;&#116;&#101;&#118;&#101;&#110;&#046;&#097;&#100;&#097;&#109;&#115;&#046;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'}
-					text={'Contact'}
-				/>
+				<Link link={`mailto:steven.adams.r@gmail.com`} text={'Contact'} />
 			</li>
 		</ul>
 	</nav>
