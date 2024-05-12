@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/link.svelte';
 	import Typewriter from '$lib/typewriter.svelte';
-	import { toHtmlEntities } from '$lib/utils';
 	import '../app.css';
 </script>
 

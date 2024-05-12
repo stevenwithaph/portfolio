@@ -15,7 +15,8 @@ export default {
 		}
 	},
 	plugins: [
-		plugin(function ({ matchUtilities, theme }) {
+		plugin(function ({ matchUtilities, theme, addVariant }) {
+			addVariant('hocus', ['&:hover', '&:focus']);
 			matchUtilities(
 				{
 					'text-shadow': (value) => ({
@@ -25,5 +26,8 @@ export default {
 				{ values: theme('textShadow') }
 			);
 		})
-	]
+	],
+	future: {
+		hoverOnlyWhenSupported: true
+	}
 };
