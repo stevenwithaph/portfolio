@@ -34,7 +34,7 @@
 		'College Dropout'
 	];
 
-	const tween = tweened('', {
+	const tween = tweened(words[0], {
 		interpolate: (a: string, b: string) => (t: number) => {
 			let string = '';
 			if (t < threshold) {
@@ -49,10 +49,9 @@
 	});
 
 	function change() {
-		const next = words[index++ % words.length];
+		const next = words[++index % words.length];
 
 		const totalCharacters = $tween.length + next.length;
-
 		threshold = $tween.length / totalCharacters;
 
 		const spaces = (next.match(' ') || []).length + ($tween.match(' ') || []).length;
@@ -67,7 +66,7 @@
 	}
 
 	onMount(() => {
-		change();
+		timeout = setTimeout(change, 3000);
 	});
 
 	onDestroy(() => {
