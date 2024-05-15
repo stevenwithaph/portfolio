@@ -16,9 +16,9 @@
 				</Link>
 			</li>
 			<li>
-				<Link target={'_blank'} link={`https://github.com/stevenwithaph`}
-					><li class={`icon-github`}></li></Link
-				>
+				<Link target={'_blank'} link={`https://github.com/stevenwithaph`}>
+					<li class={`icon-github`}></li>
+				</Link>
 			</li>
 			<li>
 				<Link target={'_self'} link={`mailto:steven.adams.r@gmail.com`}>
@@ -44,10 +44,10 @@
 		<ProjectList title="Work">
 			<Project
 				title={'NSISP'}
-				url={'https://apps.apple.com/us/app/nsisp-passport-app/id1276287671'}
 				image={'/nsisp-banner.png'}
 				description={'Custom social media application akin to Instagram tailored for international students, complemented by an admin panel facilitating seamless content management.'}
 				technologies={'React Native and Laravel'}
+				alt={'NSISP Showcase'}
 				links={[
 					{ url: 'https://apps.apple.com/us/app/nsisp-passport-app/id1276287671', icon: 'apple' },
 					{
@@ -59,33 +59,33 @@
 			<Project
 				title={'Revival Film Studios'}
 				image={'/revival-banner.png'}
-				url={'https://revivalfilmstudios.ca'}
 				description={'Crafted CMS solution designed to empower Revival Studios with an interactive map showcasing their studios'}
 				technologies={'Wordpress, Preact, Bootstrap'}
+				alt={'Revival Film Studios Showcase'}
 				links={[{ url: 'https://revivalfilmstudios.ca', icon: 'globe' }]}
 			/>
 			<Project
-				title={'NS Sea Food'}
+				title={'Nova Scotia Seafood'}
 				image={'/nsseafood-banner.png'}
-				url={'https://nsseafood.com'}
 				description={"NS Seafood's CMS solution optimizes product showcasing and management"}
 				technologies={'Drupal and Bootstrap'}
+				alt={'Nova Scotia Seafood Showcase'}
 				links={[{ url: 'https://nsseafood.com', icon: 'globe' }]}
 			/>
 			<Project
 				title={'Telus Sponsorships'}
 				image={'/telus-banner.png'}
-				url={'https://sponsorships.telus.com'}
 				description={'Tailored sponsorship evaluation tool designed exclusively for Telus, empowering comprehensive assessment of potential sponsorship opportunities'}
 				technologies={'Angular and Laravel'}
+				alt={'Telus Sponsorship Showcase'}
 				links={[{ url: 'https://sponsorships.telus.com', icon: 'globe' }]}
 			/>
 			<Project
 				title={'Arrivals + Departures'}
 				image={'/arrivals-banner.png'}
-				url={'https://arrivalsdepartures.com'}
 				description={'CMS empowering advertising agency with intuitive content management capabilities'}
 				technologies={'Bolt and Bootstrap'}
+				alt={'Arrivals + Departures Showcase'}
 				links={[{ url: 'https://arrivalsdepartures.com', icon: 'globe' }]}
 			/>
 		</ProjectList>
@@ -95,9 +95,9 @@
 			<Project
 				title={'Medenia'}
 				image={'medenia-banner.png'}
-				url={'https://github.com/stevenwithaph/medenia'}
 				description={'Private server and web client dedicated to Dark Ages'}
 				technologies={'Phaser, Svelte, and NodeJS'}
+				alt={'Medenia Showcase'}
 				links={[{ url: 'https://github.com/stevenwithaph/medenia', icon: 'github' }]}
 			/>
 		</ProjectList>
