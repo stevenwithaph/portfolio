@@ -7,11 +7,23 @@
 	import ProjectList from '$lib/project-list.svelte';
 </script>
 
-<main class="max-w-[1440px] mx-auto p-2 space-y-4">
-	<nav class="fixed top-2 right-2 z-10">
-		<ul class="flex justify-end gap-x-2">
-			<li class="text-gray-300">
-				<Link link={`mailto:steven.adams.r@gmail.com`}>Contact</Link>
+<main class="relative max-w-[1440px] mx-auto p-2 space-y-8">
+	<nav class="sticky top-2 right-2 z-10">
+		<ul class="flex justify-end gap-x-2 text-gray-300 text-xl">
+			<li>
+				<Link target={'_blank'} link={`https://www.linkedin.com/in/steven-adams-r/`}>
+					<li class={`icon-linkedin`}></li>
+				</Link>
+			</li>
+			<li>
+				<Link target={'_blank'} link={`https://github.com/stevenwithaph`}
+					><li class={`icon-github`}></li></Link
+				>
+			</li>
+			<li>
+				<Link target={'_self'} link={`mailto:steven.adams.r@gmail.com`}>
+					<li class={`icon-mail`}></li>
+				</Link>
 			</li>
 		</ul>
 	</nav>
@@ -32,6 +44,7 @@
 		<ProjectList title="Work">
 			<Project
 				title={'NSISP'}
+				url={'https://apps.apple.com/us/app/nsisp-passport-app/id1276287671'}
 				image={'/nsisp-banner.png'}
 				description={'Custom social media application akin to Instagram tailored for international students, complemented by an admin panel facilitating seamless content management.'}
 				technologies={'React Native and Laravel'}
@@ -46,6 +59,7 @@
 			<Project
 				title={'Revival Film Studios'}
 				image={'/revival-banner.png'}
+				url={'https://revivalfilmstudios.ca'}
 				description={'Crafted CMS solution designed to empower Revival Studios with an interactive map showcasing their studios'}
 				technologies={'Wordpress, Preact, Bootstrap'}
 				links={[{ url: 'https://revivalfilmstudios.ca', icon: 'globe' }]}
@@ -53,6 +67,7 @@
 			<Project
 				title={'NS Sea Food'}
 				image={'/nsseafood-banner.png'}
+				url={'https://nsseafood.com'}
 				description={"NS Seafood's CMS solution optimizes product showcasing and management"}
 				technologies={'Drupal and Bootstrap'}
 				links={[{ url: 'https://nsseafood.com', icon: 'globe' }]}
@@ -60,6 +75,7 @@
 			<Project
 				title={'Telus Sponsorships'}
 				image={'/telus-banner.png'}
+				url={'https://sponsorships.telus.com'}
 				description={'Tailored sponsorship evaluation tool designed exclusively for Telus, empowering comprehensive assessment of potential sponsorship opportunities'}
 				technologies={'Angular and Laravel'}
 				links={[{ url: 'https://sponsorships.telus.com', icon: 'globe' }]}
@@ -67,6 +83,7 @@
 			<Project
 				title={'Arrivals + Departures'}
 				image={'/arrivals-banner.png'}
+				url={'https://arrivalsdepartures.com'}
 				description={'CMS empowering advertising agency with intuitive content management capabilities'}
 				technologies={'Bolt and Bootstrap'}
 				links={[{ url: 'https://arrivalsdepartures.com', icon: 'globe' }]}
@@ -78,6 +95,7 @@
 			<Project
 				title={'Medenia'}
 				image={'medenia-banner.png'}
+				url={'https://github.com/stevenwithaph/medenia'}
 				description={'Private server and web client dedicated to Dark Ages'}
 				technologies={'Phaser, Svelte, and NodeJS'}
 				links={[{ url: 'https://github.com/stevenwithaph/medenia', icon: 'github' }]}
