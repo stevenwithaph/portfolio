@@ -1,0 +1,12 @@
+.icon-globe:before {
+	content: '\e800';
+} /* '' */
+.icon-github:before {
+	content: '\f09b';
+} /* '' */
+.icon-apple:before {
+	content: '\f179';
+} /* '' */
+.icon-android:before {
+	content: '\f17b';
+} /* '' */

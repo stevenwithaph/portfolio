@@ -1,18 +1,21 @@
 <script lang="ts">
+	import '../app.css';
+
 	import Link from '$lib/link.svelte';
 	import Typewriter from '$lib/typewriter.svelte';
-	import '../app.css';
+	import Project from '$lib/project.svelte';
+	import ProjectList from '$lib/project-list.svelte';
 </script>
 
-<main class="container mx-auto px-4">
-	<nav class="fixed top-4 right-4">
+<main class="max-w-[1440px] mx-auto p-2 space-y-4">
+	<nav class="fixed top-2 right-2 z-10">
 		<ul class="flex justify-end gap-x-2">
-			<li>
-				<Link link={`mailto:steven.adams.r@gmail.com`} text={'Contact'} />
+			<li class="text-gray-300">
+				<Link link={`mailto:steven.adams.r@gmail.com`}>Contact</Link>
 			</li>
 		</ul>
 	</nav>
-	<div class="min-h-svh flex items-center">
+	<section class="py-24 sm:py-64 flex items-center">
 		<div class="text-center w-full space-y-4">
 			<h1 class="text-5xl sm:text-6xl font-bold">
 				Hi, I'm
@@ -24,5 +27,61 @@
 			</h1>
 			<h2 class="text-3xl font-bold h-[1em] sm:text-6xl"><Typewriter /></h2>
 		</div>
-	</div>
+	</section>
+	<section>
+		<ProjectList title="Work">
+			<Project
+				title={'NSISP'}
+				image={'/nsisp-banner.png'}
+				description={'Custom social media application akin to Instagram tailored for international students, complemented by an admin panel facilitating seamless content management.'}
+				technologies={'React Native and Laravel'}
+				links={[
+					{ url: 'https://apps.apple.com/us/app/nsisp-passport-app/id1276287671', icon: 'apple' },
+					{
+						url: 'https://play.google.com/store/apps/details?id=com.nsisp.passportapp',
+						icon: 'android'
+					}
+				]}
+			/>
+			<Project
+				title={'Revival Film Studios'}
+				image={'/revival-banner.png'}
+				description={'Crafted CMS solution designed to empower Revival Studios with an interactive map showcasing their studios'}
+				technologies={'Wordpress, Preact, Bootstrap'}
+				links={[{ url: 'https://revivalfilmstudios.ca', icon: 'globe' }]}
+			/>
+			<Project
+				title={'NS Sea Food'}
+				image={'/nsseafood-banner.png'}
+				description={"NS Seafood's CMS solution optimizes product showcasing and management"}
+				technologies={'Drupal and Bootstrap'}
+				links={[{ url: 'https://nsseafood.com', icon: 'globe' }]}
+			/>
+			<Project
+				title={'Telus Sponsorships'}
+				image={'/telus-banner.png'}
+				description={'Tailored sponsorship evaluation tool designed exclusively for Telus, empowering comprehensive assessment of potential sponsorship opportunities'}
+				technologies={'Angular and Laravel'}
+				links={[{ url: 'https://sponsorships.telus.com', icon: 'globe' }]}
+			/>
+			<Project
+				title={'Arrivals + Departures'}
+				image={'/arrivals-banner.png'}
+				description={'CMS empowering advertising agency with intuitive content management capabilities'}
+				technologies={'Bolt and Bootstrap'}
+				links={[{ url: 'https://arrivalsdepartures.com', icon: 'globe' }]}
+			/>
+		</ProjectList>
+	</section>
+	<section>
+		<ProjectList title="Projects">
+			<Project
+				title={'Medenia'}
+				image={'medenia-banner.png'}
+				description={'Private server and web client dedicated to Dark Ages'}
+				technologies={'Phaser, Svelte, and NodeJS'}
+				links={[{ url: 'https://github.com/stevenwithaph/medenia', icon: 'github' }]}
+			/>
+		</ProjectList>
+	</section>
 </main>

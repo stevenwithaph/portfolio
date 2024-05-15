@@ -16,7 +16,7 @@ export default {
 	},
 	plugins: [
 		plugin(function ({ matchUtilities, theme, addVariant }) {
-			addVariant('hocus', ['&:hover', '&:focus']);
+			addVariant('hocus', ['&:hover', '&:focus-visible']);
 			matchUtilities(
 				{
 					'text-shadow': (value) => ({

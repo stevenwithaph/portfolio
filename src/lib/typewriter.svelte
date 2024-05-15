@@ -23,6 +23,7 @@
 		'Amateur Drummer',
 		'NodeJS Expert',
 		'Coffee Addict',
+		'Not a Designer',
 		'Smelly Nerd',
 		'Wordpress Expert',
 		'A Little Tired',
