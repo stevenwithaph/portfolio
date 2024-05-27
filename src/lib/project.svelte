@@ -76,7 +76,7 @@
 	bind:this={container}
 >
 	<div class="flex-1 flex flex-col p-2 rounded-t border border-zinc-700 bg-zinc-800 space-y-2">
-		<h2 class="text-2xl font-bold">{title}</h2>
+		<h3 class="text-2xl font-bold">{title}</h3>
 		<p class="flex-1">
 			{@html description}
 		</p>
