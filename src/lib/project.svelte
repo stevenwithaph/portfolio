@@ -23,7 +23,7 @@
 	const rotate = spring({
 		rotateX: 0,
 		rotateY: 0,
-		scale: 1
+		scale: 1,
 	});
 
 	let container: HTMLElement;
@@ -50,7 +50,7 @@
 		rotate.set({
 			rotateX,
 			rotateY,
-			scale: SCALE
+			scale: SCALE,
 		});
 	}
 
@@ -60,7 +60,7 @@
 		rotate.set({
 			rotateX: 0,
 			rotateY: 0,
-			scale: 1
+			scale: 1,
 		});
 
 		hover = false;
@@ -83,7 +83,7 @@
 		<p class="font-semibold">
 			{@html technologies}
 		</p>
-		<ul class="space-x-2 text-white font-bold flex flex-row">
+		<ul class="space-x-2 font-bold flex flex-row">
 			{#each links as link}
 				<a
 					class="text-shadow transition-shadow hocus:text-green-500 hocus:shadow-green-500 text-2xl"

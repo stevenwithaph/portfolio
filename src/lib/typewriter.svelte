@@ -15,12 +15,12 @@
 		'Fullstack Developer',
 		'Avid Runner',
 		'App Developer',
-		'Emo Kid',
 		'CSS Guru',
 		'Jack of All Trades',
 		'Master of None',
 		'Game Developer',
 		'Amateur Drummer',
+		'Emo Kid',
 		'NodeJS Expert',
 		'Coffee Addict',
 		'Not a Designer',
@@ -31,8 +31,6 @@
 		'Drupal Know It All',
 		'Level 15 Barbarian',
 		'Introvert',
-		'ISTP-T',
-		'College Dropout'
 	];
 
 	const tween = tweened(words[0], {
@@ -46,7 +44,7 @@
 			}
 
 			return string;
-		}
+		},
 	});
 
 	function change() {
@@ -60,7 +58,7 @@
 		const duration = ($tween.length + next.length - spaces) * durationPerCharacter;
 
 		tween.set(next, {
-			duration
+			duration,
 		});
 
 		timeout = setTimeout(change, duration + interval);

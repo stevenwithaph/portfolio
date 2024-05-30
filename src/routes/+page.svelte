@@ -9,7 +9,7 @@
 
 <main class="relative max-w-[1440px] mx-auto p-2 space-y-8">
 	<nav class="sticky top-2 right-2 z-10">
-		<ul class="flex justify-end gap-x-2 text-gray-300 text-xl">
+		<ul class="flex justify-end gap-x-2 text-neutral-400 text-xl">
 			<li>
 				<Link target={'_blank'} link={`https://www.linkedin.com/in/steven-adams-r/`}>
 					<li class={`icon-linkedin`}></li>
@@ -45,29 +45,29 @@
 			<Project
 				title={'NSISP'}
 				image={'/nsisp-banner.png'}
-				description={'Custom social media application akin to Instagram tailored for international students, complemented by an admin panel facilitating seamless content management.'}
-				technologies={'React Native and Laravel'}
+				description={'An Instagram like social media app for international students in Halifax'}
+				technologies={'React Native, NodeJS, and Laravel'}
 				alt={'NSISP Showcase'}
 				links={[
 					{ url: 'https://apps.apple.com/us/app/nsisp-passport-app/id1276287671', icon: 'apple' },
 					{
 						url: 'https://play.google.com/store/apps/details?id=com.nsisp.passportapp',
-						icon: 'android'
-					}
+						icon: 'android',
+					},
 				]}
 			/>
 			<Project
 				title={'Revival Film Studios'}
 				image={'/revival-banner.png'}
-				description={'Crafted CMS solution designed to empower Revival Studios with an interactive map showcasing their studios'}
-				technologies={'Wordpress, Preact, Bootstrap'}
+				description={'Custom wordpress theme for Revival Studios with an interactive map showcasing their studios'}
+				technologies={'Wordpress, Preact, and Bootstrap'}
 				alt={'Revival Film Studios Showcase'}
 				links={[{ url: 'https://revivalfilmstudios.ca', icon: 'globe' }]}
 			/>
 			<Project
 				title={'Nova Scotia Seafood'}
 				image={'/nsseafood-banner.png'}
-				description={"NS Seafood's CMS solution optimizes product showcasing and management"}
+				description={'A Drupal CMS for Nova Scotia Sea Food'}
 				technologies={'Drupal and Bootstrap'}
 				alt={'Nova Scotia Seafood Showcase'}
 				links={[{ url: 'https://nsseafood.com', icon: 'globe' }]}
@@ -75,7 +75,7 @@
 			<Project
 				title={'Telus Sponsorships'}
 				image={'/telus-banner.png'}
-				description={'Tailored sponsorship evaluation tool designed exclusively for Telus, empowering comprehensive assessment of potential sponsorship opportunities'}
+				description={'Sponsorship evaluation tool for Telus'}
 				technologies={'Angular and Laravel'}
 				alt={'Telus Sponsorship Showcase'}
 				links={[{ url: 'https://sponsorships.telus.com', icon: 'globe' }]}
@@ -83,7 +83,7 @@
 			<Project
 				title={'Arrivals + Departures'}
 				image={'/arrivals-banner.png'}
-				description={'CMS empowering advertising agency with intuitive content management capabilities'}
+				description={'CMS site for advertising agency'}
 				technologies={'Bolt and Bootstrap'}
 				alt={'Arrivals + Departures Showcase'}
 				links={[{ url: 'https://arrivalsdepartures.com', icon: 'globe' }]}
@@ -95,7 +95,7 @@
 			<Project
 				title={'Medenia'}
 				image={'medenia-banner.png'}
-				description={'Private server and web client dedicated to Dark Ages'}
+				description={'Private server and web client for Dark Ages'}
 				technologies={'Phaser, Svelte, and NodeJS'}
 				alt={'Medenia Showcase'}
 				links={[{ url: 'https://github.com/stevenwithaph/medenia', icon: 'github' }]}
