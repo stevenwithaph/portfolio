@@ -44,7 +44,7 @@
 		<ProjectList title="Work">
 			<Project
 				title={'NSISP'}
-				image={'/nsisp-banner.png'}
+				image={'/nsisp-banner.webp'}
 				description={'An Instagram like social media app for international students in Halifax'}
 				technologies={'React Native, NodeJS, and Laravel'}
 				alt={'NSISP Showcase'}
@@ -58,7 +58,7 @@
 			/>
 			<Project
 				title={'Revival Film Studios'}
-				image={'/revival-banner.png'}
+				image={'/revival-banner.webp'}
 				description={'Custom wordpress theme for Revival Studios with an interactive map showcasing their studios'}
 				technologies={'Wordpress, Preact, and Bootstrap'}
 				alt={'Revival Film Studios Showcase'}
@@ -66,7 +66,7 @@
 			/>
 			<Project
 				title={'Nova Scotia Seafood'}
-				image={'/nsseafood-banner.png'}
+				image={'/nsseafood-banner.webp'}
 				description={'A Drupal CMS for Nova Scotia Sea Food'}
 				technologies={'Drupal and Bootstrap'}
 				alt={'Nova Scotia Seafood Showcase'}
@@ -74,7 +74,7 @@
 			/>
 			<Project
 				title={'Telus Sponsorships'}
-				image={'/telus-banner.png'}
+				image={'/telus-banner.webp'}
 				description={'Sponsorship evaluation tool for Telus'}
 				technologies={'Angular and Laravel'}
 				alt={'Telus Sponsorship Showcase'}
@@ -82,7 +82,7 @@
 			/>
 			<Project
 				title={'Arrivals + Departures'}
-				image={'/arrivals-banner.png'}
+				image={'/arrivals-banner.webp'}
 				description={'CMS site for advertising agency'}
 				technologies={'Bolt and Bootstrap'}
 				alt={'Arrivals + Departures Showcase'}
@@ -94,7 +94,7 @@
 		<ProjectList title="Projects">
 			<Project
 				title={'Medenia'}
-				image={'medenia-banner.png'}
+				image={'medenia-banner.webp'}
 				description={'Private server and web client for Dark Ages'}
 				technologies={'Phaser, Svelte, and NodeJS'}
 				alt={'Medenia Showcase'}
