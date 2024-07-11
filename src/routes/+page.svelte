@@ -45,16 +45,10 @@
 			<Project
 				title={'NSISP'}
 				image={'/nsisp-banner.webp'}
-				description={'An Instagram like social media app for international students in Halifax'}
+				description={'An Instagram like social media app for international students in Halifax.'}
 				technologies={'React Native, NodeJS, and Laravel'}
 				alt={'NSISP Showcase'}
-				links={[
-					{ url: 'https://apps.apple.com/us/app/nsisp-passport-app/id1276287671', icon: 'apple' },
-					{
-						url: 'https://play.google.com/store/apps/details?id=com.nsisp.passportapp',
-						icon: 'android',
-					},
-				]}
+				links={[]}
 			/>
 			<Project
 				title={'Revival Film Studios'}
