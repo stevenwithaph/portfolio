@@ -100,5 +100,13 @@
 			alt={'Medenia Showcase'}
 			links={[{ url: 'https://github.com/stevenwithaph/medenia', icon: 'github' }]}
 		/>
+		<Project
+			title={'Wordle Clone'}
+			image={'wordle-banner.webp'}
+			description={'As the name implies, a Wordle clone'}
+			technologies={'SvelteKit'}
+			alt={'Wordle Showcase'}
+			links={[{ url: 'https://not-another-wordle-clone.vercel.app', icon: 'github' }]}
+		/>
 	</ProjectList>
 </main>
