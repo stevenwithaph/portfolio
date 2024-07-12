@@ -12,6 +12,7 @@
 
 <script lang="ts">
 	import { spring } from 'svelte/motion';
+	import Link from './link.svelte';
 
 	export let title: string;
 	export let description: string;
@@ -67,15 +68,16 @@
 	}
 </script>
 
-<div
-	class="flex flex-col"
-	role="presentation"
+<a
+	href={(links.length !== 0 && links[0].url) || null}
+	target="_blank"
+	class="flex flex-col border border-zinc-700 hover:border-green-500"
 	style={`transform:perspective(700px) rotateX(${clamp($rotate.rotateY, -ROTATION, ROTATION)}deg) rotateY(${clamp(-$rotate.rotateX, -ROTATION, ROTATION)}deg) scale(${clamp($rotate.scale, 1, SCALE)})`}
 	on:pointermove={onMouseMove}
 	on:pointerout={onMouseOut}
 	bind:this={container}
 >
-	<div class="flex-1 flex flex-col p-2 rounded-t border border-zinc-700 bg-zinc-800 space-y-2">
+	<div class="flex-1 flex flex-col p-2 bg-zinc-800 space-y-2">
 		<h3 class="text-2xl font-bold">{title}</h3>
 		<p class="flex-1">
 			{@html description}
@@ -83,27 +85,15 @@
 		<p class="font-semibold">
 			{@html technologies}
 		</p>
-		<ul class="space-x-2 font-bold flex flex-row">
-			{#each links as link}
-				<a
-					class="text-shadow transition-shadow hocus:text-green-500 hocus:shadow-green-500 text-2xl"
-					href={link.url}
-					target="_blank"
-				>
-					<li class={`icon-${link.icon}`}></li>
-				</a>
-			{/each}
-		</ul>
 	</div>
 	<div>
 		<img
 			{alt}
 			class:grayscale-0={hover}
 			class:grayscale={!hover}
-			class="rounded-b"
 			src={image}
 			width="1024"
 			height="768"
 		/>
 	</div>
-</div>
+</a>

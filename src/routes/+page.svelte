@@ -5,6 +5,7 @@
 	import Typewriter from '$lib/typewriter.svelte';
 	import Project from '$lib/project.svelte';
 	import ProjectList from '$lib/project-list.svelte';
+	import Section from '$lib/section.svelte';
 </script>
 
 <main class="relative max-w-[1440px] mx-auto p-2 space-y-8">
@@ -40,60 +41,64 @@
 			<h2 class="text-3xl font-bold h-[1em] sm:text-6xl"><Typewriter /></h2>
 		</div>
 	</section>
-	<section>
-		<ProjectList title="Work">
-			<Project
-				title={'NSISP'}
-				image={'/nsisp-banner.webp'}
-				description={'An Instagram like social media app for international students in Halifax.'}
-				technologies={'React Native, NodeJS, and Laravel'}
-				alt={'NSISP Showcase'}
-				links={[]}
-			/>
-			<Project
-				title={'Revival Film Studios'}
-				image={'/revival-banner.webp'}
-				description={'Custom wordpress theme for Revival Studios with an interactive map showcasing their studios'}
-				technologies={'Wordpress, Preact, and Bootstrap'}
-				alt={'Revival Film Studios Showcase'}
-				links={[{ url: 'https://revivalfilmstudios.ca', icon: 'globe' }]}
-			/>
-			<Project
-				title={'Nova Scotia Seafood'}
-				image={'/nsseafood-banner.webp'}
-				description={'A Drupal CMS for Nova Scotia Sea Food'}
-				technologies={'Drupal and Bootstrap'}
-				alt={'Nova Scotia Seafood Showcase'}
-				links={[{ url: 'https://nsseafood.com', icon: 'globe' }]}
-			/>
-			<Project
-				title={'Telus Sponsorships'}
-				image={'/telus-banner.webp'}
-				description={'Sponsorship evaluation tool for Telus'}
-				technologies={'Angular and Laravel'}
-				alt={'Telus Sponsorship Showcase'}
-				links={[{ url: 'https://sponsorships.telus.com', icon: 'globe' }]}
-			/>
-			<Project
-				title={'Arrivals + Departures'}
-				image={'/arrivals-banner.webp'}
-				description={'CMS site for advertising agency'}
-				technologies={'Bolt and Bootstrap'}
-				alt={'Arrivals + Departures Showcase'}
-				links={[{ url: 'https://arrivalsdepartures.com', icon: 'globe' }]}
-			/>
-		</ProjectList>
-	</section>
-	<section>
-		<ProjectList title="Projects">
-			<Project
-				title={'Medenia'}
-				image={'medenia-banner.webp'}
-				description={'Private server and web client for Dark Ages'}
-				technologies={'Phaser, Svelte, and NodeJS'}
-				alt={'Medenia Showcase'}
-				links={[{ url: 'https://github.com/stevenwithaph/medenia', icon: 'github' }]}
-			/>
-		</ProjectList>
-	</section>
+	<Section title="About Me">
+		<p class="text-lg max-w-[100ch]">
+			Bringing over six years of experience in full stack development and recently returned to the
+			tech industry after military service. My career includes developing tailored solutions and
+			ensuring seamless user experiences. With a background in discipline, leadership, and teamwork,
+			I thrive in Agile environments and am committed to continuous learning and personal projects.
+		</p>
+	</Section>
+	<ProjectList title="Work">
+		<Project
+			title={'NSISP'}
+			image={'/nsisp-banner.webp'}
+			description={'An Instagram like social media app for international students in Halifax.'}
+			technologies={'React Native, NodeJS, and Laravel'}
+			alt={'NSISP Showcase'}
+			links={[]}
+		/>
+		<Project
+			title={'Revival Film Studios'}
+			image={'/revival-banner.webp'}
+			description={'Custom wordpress theme for Revival Studios with an interactive map showcasing their studios'}
+			technologies={'Wordpress, Preact, and Bootstrap'}
+			alt={'Revival Film Studios Showcase'}
+			links={[{ url: 'https://revivalfilmstudios.ca', icon: 'globe' }]}
+		/>
+		<Project
+			title={'Nova Scotia Seafood'}
+			image={'/nsseafood-banner.webp'}
+			description={'A Drupal CMS for Nova Scotia Sea Food'}
+			technologies={'Drupal and Bootstrap'}
+			alt={'Nova Scotia Seafood Showcase'}
+			links={[{ url: 'https://nsseafood.com', icon: 'globe' }]}
+		/>
+		<Project
+			title={'Telus Sponsorships'}
+			image={'/telus-banner.webp'}
+			description={'Sponsorship evaluation tool for Telus'}
+			technologies={'Angular and Laravel'}
+			alt={'Telus Sponsorship Showcase'}
+			links={[{ url: 'https://sponsorships.telus.com', icon: 'globe' }]}
+		/>
+		<Project
+			title={'Arrivals + Departures'}
+			image={'/arrivals-banner.webp'}
+			description={'CMS site for advertising agency'}
+			technologies={'Bolt and Bootstrap'}
+			alt={'Arrivals + Departures Showcase'}
+			links={[{ url: 'https://arrivalsdepartures.com', icon: 'globe' }]}
+		/>
+	</ProjectList>
+	<ProjectList title="Projects">
+		<Project
+			title={'Medenia'}
+			image={'medenia-banner.webp'}
+			description={'Private server and web client for Dark Ages'}
+			technologies={'Phaser, Svelte, and NodeJS'}
+			alt={'Medenia Showcase'}
+			links={[{ url: 'https://github.com/stevenwithaph/medenia', icon: 'github' }]}
+		/>
+	</ProjectList>
 </main>
