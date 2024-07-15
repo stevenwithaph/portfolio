@@ -66,13 +66,13 @@
 <a
 	href={url}
 	{target}
-	class="flex flex-col border border-zinc-700 hover:border-green-500"
+	class="flex flex-col border border-neutral-800 hover:border-green-500"
 	style={`transform:perspective(700px) rotateX(${clamp($rotate.rotateY, -ROTATION, ROTATION)}deg) rotateY(${clamp(-$rotate.rotateX, -ROTATION, ROTATION)}deg) scale(${clamp($rotate.scale, 1, SCALE)})`}
 	on:pointermove={onMouseMove}
 	on:pointerout={onMouseOut}
 	bind:this={container}
 >
-	<div class="flex-1 flex flex-col p-2 bg-zinc-800 space-y-2">
+	<div class="flex-1 flex flex-col p-2 bg-neutral-900 space-y-2">
 		<h3 class="text-2xl font-bold">{title}</h3>
 		<p class="flex-1">
 			{@html description}
