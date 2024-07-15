@@ -48,7 +48,7 @@
 	<Project
 		title={'Nova Scotia Seafood'}
 		image={'/nsseafood-banner.webp'}
-		description={'A Drupal CMS for Nova Scotia Seafood'}
+		description={'A Drupal website for Nova Scotia Seafood'}
 		technologies={'Drupal and Bootstrap'}
 		alt={'Nova Scotia Seafood Showcase'}
 		url={'https://nsseafood.com'}
@@ -64,7 +64,7 @@
 	<Project
 		title={'Arrivals + Departures'}
 		image={'/arrivals-banner.webp'}
-		description={'Bolt CMS site'}
+		description={'Bolt based website'}
 		technologies={'Bolt and Bootstrap'}
 		alt={'Arrivals + Departures Showcase'}
 		url={'https://arrivalsdepartures.com'}
