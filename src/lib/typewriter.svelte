@@ -19,18 +19,10 @@
 		'Jack of All Trades',
 		'Master of None',
 		'Game Developer',
-		'Amateur Drummer',
-		'Emo Kid',
 		'NodeJS Expert',
 		'Coffee Addict',
-		'Not a Designer',
-		'Smelly Nerd',
 		'Wordpress Expert',
-		'A Little Tired',
-		'Lovable Geek',
 		'Drupal Know It All',
-		'Level 15 Barbarian',
-		'Introvert',
 	];
 
 	const tween = tweened(words[0], {

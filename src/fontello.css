@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'fontello';
+	src: url('/font/fontello.woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 .icon-globe:before {
 	content: '\e800';
 } /* '' */
@@ -16,3 +22,8 @@
 .icon-android:before {
 	content: '\f17b';
 } /* '' */
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	font-family: 'fontello';
+}

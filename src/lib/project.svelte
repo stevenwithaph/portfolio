@@ -1,9 +1,4 @@
 <script lang="ts" context="module">
-	export interface ProjectLink {
-		icon: string;
-		url: string;
-	}
-
 	const ROTATION = 2;
 	const SCALE = 1.05;
 
@@ -12,14 +7,14 @@
 
 <script lang="ts">
 	import { spring } from 'svelte/motion';
-	import Link from './link.svelte';
 
 	export let title: string;
 	export let description: string;
 	export let image: string;
 	export let alt: string;
 	export let technologies: string;
-	export let links: ProjectLink[];
+	export let url: string;
+	export let target: string = '_blank';
 
 	const rotate = spring({
 		rotateX: 0,
@@ -69,8 +64,8 @@
 </script>
 
 <a
-	href={(links.length !== 0 && links[0].url) || null}
-	target="_blank"
+	href={url}
+	{target}
 	class="flex flex-col border border-zinc-700 hover:border-green-500"
 	style={`transform:perspective(700px) rotateX(${clamp($rotate.rotateY, -ROTATION, ROTATION)}deg) rotateY(${clamp(-$rotate.rotateX, -ROTATION, ROTATION)}deg) scale(${clamp($rotate.scale, 1, SCALE)})`}
 	on:pointermove={onMouseMove}
