@@ -21,10 +21,11 @@
 </section>
 <Section title="About Me">
 	<p class="md:text-xl text-center m-auto max-w-[100ch]">
-		Bringing over six years of experience in full stack development and recently returned to the
-		tech industry after military service. With a background in discipline, leadership, and teamwork,
-		I thrive in Agile environments and am committed to continuous learning through personal
-		projects.
+		Experienced Full Stack Developer with 6+ years in web development, returning to the technology
+		field after military service. Skilled in React, Angular, Node.js, and PHP, with experience
+		deploying applications to cloud environments and optimizing system performance. Skilled in
+		integrating front-end and back-end technologies to deliver tailored solutions; committed to
+		innovation through ongoing personal projects, with experience in game development.
 	</p>
 </Section>
 <ProjectList title="Work">
