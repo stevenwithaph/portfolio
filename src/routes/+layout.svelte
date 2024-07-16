@@ -5,7 +5,7 @@
 	import Link from '$lib/link.svelte';
 </script>
 
-<main class="relative max-w-[1440px] mx-auto p-2 space-y-8">
+<main class="relative container mx-auto p-2 space-y-8">
 	<nav class="sticky top-2 right-2 z-10">
 		<ul class="flex justify-end gap-x-4 text-neutral-400 text-xl">
 			<li>

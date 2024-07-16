@@ -19,9 +19,9 @@
 		'Jack of All Trades',
 		'Master of None',
 		'Game Developer',
-		'NodeJS Expert',
+		'Node.js Expert',
 		'Coffee Addict',
-		'Wordpress Expert',
+		'WordPress Expert',
 		'Drupal Know It All',
 	];
 

@@ -1,12 +1,11 @@
 <script lang="ts">
-	import Link from '$lib/link.svelte';
 	import Typewriter from '$lib/typewriter.svelte';
 	import Project from '$lib/project.svelte';
 	import ProjectList from '$lib/project-list.svelte';
 	import Section from '$lib/section.svelte';
 </script>
 
-<section class="py-24 sm:py-64 flex items-center">
+<section class="py-16 flex items-center">
 	<div class="text-center w-full space-y-4">
 		<h1 class="text-5xl sm:text-6xl font-bold">
 			Hi, I'm
@@ -16,11 +15,11 @@
 				Steven
 			</span>
 		</h1>
-		<h2 class="text-3xl font-bold h-[1em] sm:text-6xl"><Typewriter /></h2>
+		<h2 class="text-4xl font-bold h-[1em]"><Typewriter /></h2>
 	</div>
 </section>
-<Section title="About Me">
-	<p class="md:text-xl text-center m-auto max-w-[100ch]">
+<Section>
+	<p class="md:text-lg text-center m-auto max-w-[100ch]">
 		Experienced Full Stack Developer with 6+ years in web development, returning to the technology
 		field after military service. Skilled in React, Angular, Node.js, and PHP, with experience
 		deploying applications to cloud environments and optimizing system performance. Skilled in
@@ -33,7 +32,7 @@
 		title={'NSISP'}
 		image={'/nsisp-banner.webp'}
 		description={'An Instagram like social media app for international students in Halifax.'}
-		technologies={'React Native, NodeJS, and Laravel'}
+		technologies={['React Native', 'NodeJS', 'Laravel']}
 		alt={'NSISP Showcase'}
 		url={'https://www.arrivalsdepartures.com/hal/showcase/nova-scotia-international-student-program'}
 	/>
@@ -41,7 +40,7 @@
 		title={'Revival Film Studios'}
 		image={'/revival-banner.webp'}
 		description={'Custom wordpress theme for Revival Studios with an interactive map showcasing their studios'}
-		technologies={'Wordpress, Preact, and Bootstrap'}
+		technologies={['WordPress', 'Preact', 'Bootstrap']}
 		alt={'Revival Film Studios Showcase'}
 		url={'https://revivalfilmstudios.ca'}
 	/>
@@ -49,7 +48,7 @@
 		title={'Nova Scotia Seafood'}
 		image={'/nsseafood-banner.webp'}
 		description={'A Drupal website for Nova Scotia Seafood'}
-		technologies={'Drupal and Bootstrap'}
+		technologies={['Drupal', 'Bootstrap']}
 		alt={'Nova Scotia Seafood Showcase'}
 		url={'https://nsseafood.com'}
 	/>
@@ -57,7 +56,7 @@
 		title={'Telus Sponsorships'}
 		image={'/telus-banner.webp'}
 		description={'Sponsorship evaluation tool for Telus'}
-		technologies={'Angular and Laravel'}
+		technologies={['Angular', 'Laravel']}
 		alt={'Telus Sponsorship Showcase'}
 		url={'https://sponsorships.telus.com'}
 	/>
@@ -65,7 +64,7 @@
 		title={'Arrivals + Departures'}
 		image={'/arrivals-banner.webp'}
 		description={'Bolt based website'}
-		technologies={'Bolt and Bootstrap'}
+		technologies={['Bolt', 'Bootstrap']}
 		alt={'Arrivals + Departures Showcase'}
 		url={'https://arrivalsdepartures.com'}
 	/>
@@ -75,7 +74,7 @@
 		title={'Medenia'}
 		image={'medenia-banner.webp'}
 		description={'Private server and web client for Dark Ages'}
-		technologies={'Phaser, Svelte, and NodeJS'}
+		technologies={['Phaser', 'Svelte', 'NodeJS']}
 		alt={'Medenia Showcase'}
 		url={'https://github.com/stevenwithaph/medenia'}
 	/>
@@ -83,7 +82,7 @@
 		title={'Wordle Clone'}
 		image={'wordle-banner.webp'}
 		description={'As the name implies, a Wordle clone'}
-		technologies={'SvelteKit'}
+		technologies={['SvelteKit']}
 		alt={'Wordle Showcase'}
 		url={'https://not-another-wordle-clone.vercel.app'}
 	/>
