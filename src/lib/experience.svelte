@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let start: string;
-	export let end: string = 'present';
+	export let end: string = 'Present';
 	export let title: string;
 </script>
 
