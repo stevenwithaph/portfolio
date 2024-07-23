@@ -65,4 +65,5 @@
 	});
 </script>
 
-<pre class="inline font-sans whitespace-pre-wrap">{$tween}</pre>
+<pre class="inline font-sans whitespace-pre-wrap">{$tween}<span class="animate-typewriter">|</span
+	></pre>

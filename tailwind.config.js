@@ -7,12 +7,21 @@ export default {
 	theme: {
 		extend: {
 			textShadow: {
-				DEFAULT: '0px 0px 20px var(--tw-shadow-color)'
+				DEFAULT: '0px 0px 20px var(--tw-shadow-color)',
 			},
 			boxShadow: {
-				glow: '0px 0px 20px 0px var(--tw-shadow-color)'
-			}
-		}
+				glow: '0px 0px 20px 0px var(--tw-shadow-color)',
+			},
+			animation: {
+				typewriter: 'typewriter 1s linear infinite',
+			},
+			keyframes: {
+				typewriter: {
+					'0%, 100%': { opacity: 1 },
+					'50%': { opacity: 0 },
+				},
+			},
+		},
 	},
 	plugins: [
 		plugin(function ({ matchUtilities, theme, addVariant }) {
@@ -20,14 +29,14 @@ export default {
 			matchUtilities(
 				{
 					'text-shadow': (value) => ({
-						textShadow: value
-					})
+						textShadow: value,
+					}),
 				},
-				{ values: theme('textShadow') }
+				{ values: theme('textShadow') },
 			);
-		})
+		}),
 	],
 	future: {
-		hoverOnlyWhenSupported: true
-	}
+		hoverOnlyWhenSupported: true,
+	},
 };
