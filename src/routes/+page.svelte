@@ -19,7 +19,7 @@
 </section>
 <Section>
 	<p class="md:text-lg text-center m-auto max-w-[100ch]">
-		Experienced Full Stack Developer with 6+ years in web development, returning to the technology
+		Experienced Full Stack Developer with 4+ years in web development, returning to the technology
 		field after military service. Skilled in React, Angular, Node.js, and PHP, with experience
 		deploying applications to cloud environments and optimizing system performance. Skilled in
 		integrating front-end and back-end technologies to deliver tailored solutions; committed to
