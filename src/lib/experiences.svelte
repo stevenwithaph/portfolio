@@ -2,8 +2,8 @@
 	import Section from './section.svelte';
 </script>
 
-<Section title="Experience">
-	<div class="space-y-4">
+<Section title="Work Experience">
+	<ul class="space-y-2 divide-y divide-neutral-700">
 		<slot />
-	</div>
+	</ul>
 </Section>

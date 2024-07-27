@@ -1,3 +1,4 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const plugin = require('tailwindcss/plugin');
 
@@ -20,6 +21,10 @@ export default {
 					'0%, 100%': { opacity: 1 },
 					'50%': { opacity: 0 },
 				},
+			},
+			fontFamily: {
+				sans: ['Inter', ...defaultTheme.fontFamily.sans],
+				serif: ['Lora', ...defaultTheme.fontFamily.serif],
 			},
 		},
 	},

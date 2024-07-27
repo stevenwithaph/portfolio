@@ -1,97 +1,20 @@
-<script lang="ts" context="module">
-	const ROTATION = 2;
-	const SCALE = 1.05;
-
-	const DOUBLE_ROTATION = ROTATION * 2;
-</script>
-
 <script lang="ts">
-	import { spring } from 'svelte/motion';
-
 	export let title: string;
 	export let description: string;
-	export let image: string;
-	export let alt: string;
 	export let technologies: string[] = [];
 	export let url: string;
-	export let target: string = '_blank';
-
-	const rotate = spring({
-		rotateX: 0,
-		rotateY: 0,
-		scale: 1,
-	});
-
-	let container: HTMLElement;
-	let hover: boolean = false;
-
-	function clamp(current: number, min: number, max: number) {
-		return Math.min(Math.max(current, min), max);
-	}
-
-	function onMouseMove(event: PointerEvent) {
-		if (event.pointerType === 'touch') return;
-
-		hover = true;
-		const bounds = container.getBoundingClientRect();
-		const x = event.clientX - bounds.left;
-		const y = event.clientY - bounds.top;
-
-		const width = container.clientWidth;
-		const height = container.clientHeight;
-
-		const rotateX = (x / width) * DOUBLE_ROTATION - ROTATION;
-		const rotateY = (y / height) * DOUBLE_ROTATION - ROTATION;
-
-		rotate.set({
-			rotateX,
-			rotateY,
-			scale: SCALE,
-		});
-	}
-
-	function onMouseOut(event: PointerEvent) {
-		if (event.pointerType === 'touch') return;
-
-		rotate.set({
-			rotateX: 0,
-			rotateY: 0,
-			scale: 1,
-		});
-
-		hover = false;
-	}
 </script>
 
-<a
-	href={url}
-	{target}
-	class="flex flex-col border border-neutral-800 hover:border-green-500"
-	style={`transform:perspective(700px) rotateX(${clamp($rotate.rotateY, -ROTATION, ROTATION)}deg) rotateY(${clamp(-$rotate.rotateX, -ROTATION, ROTATION)}deg) scale(${clamp($rotate.scale, 1, SCALE)})`}
-	on:pointermove={onMouseMove}
-	on:pointerout={onMouseOut}
-	bind:this={container}
+<li
+	class="group relative after:content-[''] after:transition-colors after:absolute after:-inset-x-2 after:-inset-y-0 hover:after:bg-neutral-800 after:-z-10 first:after:rounded-t-lg last:after:rounded-b-lg"
 >
-	<div class="flex-1 flex flex-col p-4 space-y-3">
-		<h3 class="text-2xl font-bold">{title}</h3>
-		<p class="flex-1">
+	<a href={url} target={'_blank'} class="block border-b border-neutral-800 py-2">
+		<h3 class="font-bold">{title}</h3>
+		<p>
 			{@html description}
 		</p>
-
-		<ul class="flex justify-center gap-2">
-			{#each technologies as technology}
-				<li class="font-semibold">{technology}</li>
-			{/each}
-		</ul>
+	</a>
+	<div class="absolute inset-y-0 right-0 m-auto flex items-center">
+		<span class="group-hover:text-green-500 text-3xl transition-colors">&rsaquo;</span>
 	</div>
-	<div>
-		<img
-			{alt}
-			class:grayscale-0={hover}
-			class:grayscale={!hover}
-			src={image}
-			width="1024"
-			height="768"
-		/>
-	</div>
-</a>
+</li>

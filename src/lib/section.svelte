@@ -4,9 +4,9 @@
 	export let title: string | undefined = undefined;
 </script>
 
-<section class="relative">
+<section class="pb-8">
 	{#if title}
-		<h2 class="text-2xl mb-8 decoration-green-500 font-semibold sm:text-4xl">
+		<h2 class="decoration-green-500 font-bold mb-4">
 			<Highlight>{title}</Highlight>
 		</h2>
 	{/if}

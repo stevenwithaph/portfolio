@@ -12,7 +12,7 @@
 	let threshold: number = 0;
 
 	let words: string[] = [
-		'Fullstack Developer',
+		'Full Stack Developer',
 		'Avid Runner',
 		'App Developer',
 		'CSS Guru',
