@@ -9,7 +9,7 @@
 	class="group relative after:content-[''] after:transition-colors after:absolute after:-inset-x-2 after:-inset-y-0 hover:after:bg-neutral-800 after:-z-10 first:after:rounded-t-lg last:after:rounded-b-lg"
 >
 	<a href={url} target={'_blank'} class="block border-b border-neutral-800 py-2">
-		<h3 class="font-bold">{title}</h3>
+		<h2 class="font-bold">{title}</h2>
 		<p>
 			{@html description}
 		</p>
