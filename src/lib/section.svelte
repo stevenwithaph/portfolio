@@ -6,9 +6,9 @@
 
 <section class="pb-8">
 	{#if title}
-		<h2 class="decoration-green-500 font-bold mb-4">
+		<h1 class="decoration-green-500 font-bold mb-4">
 			<Highlight>{title}</Highlight>
-		</h2>
+		</h1>
 	{/if}
 	<slot />
 </section>
