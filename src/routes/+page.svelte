@@ -127,7 +127,7 @@
 		title={'Medenia'}
 		description={'Private server and web client for Dark Ages'}
 		technologies={['Phaser', 'Svelte', 'NodeJS']}
-		url={'https://github.com/stevenwithaph/medenia'}
+		url={'https://stevenwithaph.github.io/medenia/'}
 	/>
 	<Project
 		title={'Wordle Clone'}
