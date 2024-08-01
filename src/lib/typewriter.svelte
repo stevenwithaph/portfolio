@@ -19,10 +19,12 @@
 		'Jack of All Trades',
 		'Master of None',
 		'Game Developer',
+		'Serious Boardgame Player',
 		'Node.js Expert',
 		'Coffee Addict',
 		'WordPress Expert',
 		'Drupal Know It All',
+		'Popcorn Eater',
 	];
 
 	const tween = tweened(words[0], {
