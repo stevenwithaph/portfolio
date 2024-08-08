@@ -124,10 +124,10 @@
 </Experiences>
 <ProjectList title="Projects">
 	<Project
-		title={'Medenia'}
-		description={'Private server and web client for Dark Ages'}
+		title={'Dark Ages TS'}
+		description={'Private server and web client for Dark Ages written in TypeScript'}
 		technologies={['Phaser', 'Svelte', 'NodeJS']}
-		url={'https://stevenwithaph.github.io/medenia/'}
+		url={'https://stevenwithaph.github.io/dark-ages-ts/'}
 	/>
 	<Project
 		title={'Wordle Clone'}
