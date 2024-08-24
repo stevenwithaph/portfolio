@@ -3,6 +3,7 @@
 	import '../fontello.css';
 
 	import Link from '$lib/link.svelte';
+	import Cursor from '$lib/cursor.svelte';
 </script>
 
 <header class="fixed top-0 w-full py-2 bg-neutral-900/20 backdrop-blur">
@@ -28,5 +29,6 @@
 </header>
 
 <main class="max-w-screen-sm m-auto px-4">
+	<Cursor />
 	<slot />
 </main>

@@ -126,25 +126,21 @@
 	<Project
 		title={'Dark Ages TS'}
 		description={'Private server and web client for Dark Ages written in TypeScript'}
-		technologies={['Phaser', 'Svelte', 'NodeJS']}
 		url={'https://stevenwithaph.github.io/dark-ages-ts/'}
 	/>
 	<Project
 		title={'Wordle Clone'}
 		description={'As the name implies, a Wordle clone'}
-		technologies={['SvelteKit']}
 		url={'https://not-another-wordle-clone.vercel.app'}
 	/>
 	<Project
 		title={'Note Code'}
 		description={'Quickly share code snippets'}
-		technologies={['SvelteKit']}
 		url={'https://note-code-sigma.vercel.app'}
 	/>
 	<Project
 		title={'Portfolio'}
 		description={'The source of this portfolio'}
-		technologies={['SvelteKit']}
 		url={'https://github.com/stevenwithaph/portfolio'}
 	/>
 </ProjectList>
