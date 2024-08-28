@@ -29,6 +29,7 @@
 </header>
 
 <main class="max-w-screen-sm m-auto px-4">
-	<Cursor />
 	<slot />
 </main>
+
+<Cursor />

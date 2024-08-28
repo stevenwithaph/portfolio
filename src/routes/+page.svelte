@@ -9,7 +9,7 @@
 </script>
 
 <Section>
-	<div class="mt-24">
+	<div class="pt-24">
 		<div class="mb-8">
 			<h1 class="font-bold">
 				Hi, I'm
