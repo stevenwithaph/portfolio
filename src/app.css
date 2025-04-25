@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html,
-body {
-	scrollbar-color: theme(colors.green.500) theme(colors.zinc.900);
-	scrollbar-width: thin;
-}
