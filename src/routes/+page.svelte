@@ -18,7 +18,7 @@
 			<h2 class="font-semibold"><Typewriter /></h2>
 		</div>
 		<p>
-			Experienced Full Stack Developer with 4+ years in web development, returning to the technology
+			Experienced Full Stack Developer with 5+ years in web development, returning to the technology
 			field after military service. Skilled in React, Angular, Node.js, and PHP, with experience
 			deploying applications to cloud environments and optimizing system performance. Skilled in
 			integrating front-end and back-end technologies to deliver tailored solutions; committed to
@@ -27,7 +27,24 @@
 	</div>
 </Section>
 <Experiences>
-	<Experience location={'Freelance'} title={'Web Developer'} start={'2023'}>
+  <Experience location={'Y Drive App'} title={'Full Stack Developer'} start={'2025'}>
+		<ul class="space-y-2">
+      <li>Developed and maintained cross-platform mobile applications for iOS and Android using React Native</li>
+      <li>Designed and implemented internal tools to manage, monitor, and extend core system functionality</li>
+      <li>Integrated mobile applications with backend services, ensuring reliable data flow and performance</li>
+      <li>Led and mentored junior developers through regular code reviews, technical guidance, and best-practice advocacy</li>
+      <li>Collaborated with product and design teams to translate requirements into scalable, user-focused solutions</li>
+    </ul>
+	</Experience>
+  <Experience location={'Best Egg'} title={'Frontend Developer'} start={'2024'} end={'2025'}>
+		<ul class="space-y-2">
+			<li>Developed and maintained frontend application using Vue.js and Tailwind CSS</li>
+      <li>Integrated backend APIs</li>
+      <li>Conducted detailed code reviews, enhancing code quality and maintaining best practices across the team.</li>
+      <li>Collaborated with the design team to translate Figma wireframes into functional UI components</li>
+		</ul>
+	</Experience>
+	<Experience location={'Freelance'} title={'Web Developer'} start={'2023'} end={'2024'}>
 		<ul class="space-y-2">
 			<li>
 				Strategically designing, developing, and maintaining responsive websites tailored to meet
@@ -132,11 +149,6 @@
 		title={'Wordle Clone'}
 		description={'As the name implies, a Wordle clone'}
 		url={'https://not-another-wordle-clone.vercel.app'}
-	/>
-	<Project
-		title={'Note Code'}
-		description={'Quickly share code snippets'}
-		url={'https://note-code-sigma.vercel.app'}
 	/>
 	<Project
 		title={'Portfolio'}
